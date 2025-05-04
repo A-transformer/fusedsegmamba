@@ -1,0 +1,5 @@
+# ninja log v5
+1	10708	1746361565078595635	/data/fusedsegmamba/causal-conv1d/build/temp.linux-x86_64-cpython-311/csrc/causal_conv1d_update.o	f4c3b947eff66559
+1	15169	1746361569530637759	/data/fusedsegmamba/causal-conv1d/build/temp.linux-x86_64-cpython-311/csrc/causal_conv1d_fwd.o	ddd1fc6b87c3b2e2
+1	27908	1746361582274758338	/data/fusedsegmamba/causal-conv1d/build/temp.linux-x86_64-cpython-311/csrc/causal_conv1d.o	ed23e64306a6e105
+1	30963	1746361585306787025	/data/fusedsegmamba/causal-conv1d/build/temp.linux-x86_64-cpython-311/csrc/causal_conv1d_bwd.o	6b66192eea6c9c55
