@@ -131,7 +131,7 @@ class GSC(nn.Module):
         
         return x + x_residual
 
-class MambaEncoder(nn.Module):
+class FusedMambaEncoder(nn.Module):
     def __init__(self, in_chans=1, depths=[2, 2, 2, 2], dims=[48, 96, 192, 384],
                  drop_path_rate=0., layer_scale_init_value=1e-6, out_indices=[0, 1, 2, 3]):
         super().__init__()
@@ -192,7 +192,7 @@ class MambaEncoder(nn.Module):
         x = self.forward_features(x)
         return x
 
-class SegMamba(nn.Module):
+class FusedSegMamba(nn.Module):
     def __init__(
         self,
         in_chans=1,
@@ -218,7 +218,7 @@ class SegMamba(nn.Module):
         self.layer_scale_init_value = layer_scale_init_value
 
         self.spatial_dims = spatial_dims
-        self.vit = MambaEncoder(in_chans, 
+        self.vit = FusedMambaEncoder(in_chans, 
                                 depths=depths,
                                 dims=feat_size,
                                 drop_path_rate=drop_path_rate,
